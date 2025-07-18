@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>NavBar Example</title> -->
+     <title>Table without tbody</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- <nav class="navbar">
+   <ul>
+    <li class="active">home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact</li>
+   </ul>
+  </nav>   -->
+
+  <!-- <table border="1">
+    <tr>
+        <th>header 1</th>
+        <th>header 2</th>
+        <th>header 3</th>
+    </tr>
+    <tr>
+        <td>row 1, Cell 1</td>
+        <td>row 1, Cell 2</td>
+        <td>row 1, Cell 3</td>
+    </tr>
+    <tr>
+        <td>row 2, Cell 1</td>
+        <td>row 2, Cell 2</td>
+        <td>row 2, Cell 3</td>
+    </tr>
+  </table>
+</body>
+</html>
+ -->
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element with Children</title>
+</head>
+<body>
+
+<script>
+    // Step 1: Create a parent div element
+    const parentDiv = document.createElement("div");
+    parentDiv.id = "parent"; // Optional: Set an ID for styling or reference
+
+    // Step 2: Create three child paragraph elements
+    for (let i = 1; i <= 3; i++) {
+        const childPara = document.createElement("p");
+        childPara.innerText = `This is paragraph ${i}`; // Set text content for each paragraph
+        parentDiv.appendChild(childPara); // Step 3: Append each paragraph to the parent div
+    }
+
+    // Step 4: Append the parent div to the body of the document
+    document.body.appendChild(parentDiv);
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    <button id="changecolor"> change background color</button>
+    <script>
+        document.getElementById("changecolor").addEventListener("click",
+         function(){
+            const list = document.querySelectorAll("li");
+            list.forEach(function(item) {
+                item.style.backgroundColor = "cyan";
+            });
+         });
+    </script>
+</body>
+</html>
